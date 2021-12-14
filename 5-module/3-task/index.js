@@ -12,7 +12,6 @@ function initCarousel() {
     position -= width;
     position = Math.max(position, -width * (slides.length - 1));
     items[0].style.transform = 'translateX(' + position + 'px)';
-    // items[0].style.marginLeft = position + 'px';
     left.style.display = 'block';
 
     if (position === (-width * (slides.length - 1))) {
@@ -24,7 +23,6 @@ function initCarousel() {
     position += width;
     position = Math.min(position, 0);
     items[0].style.transform = 'translateX(' + position + 'px)';
-    // items[0].style.marginLeft = position + 'px';
     right.style.display = 'block';
     if (position === 0) {
       left.style.display = 'none';
